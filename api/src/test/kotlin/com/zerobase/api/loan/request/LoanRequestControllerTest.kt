@@ -41,21 +41,21 @@ internal class LoanRequestControllerTest {
     }
 
     @BeforeEach
-    fun init() {
-        generateKey = GenerateKey()
-
-        encryptComponent = EncryptComponent()
-
-        loanRequestServiceImpl = LoanRequestServiceImpl(
-            generateKey, userInfoRepository, encryptComponent
-        )
-
-        loanRequestController = LoanRequestController(loanRequestServiceImpl)
-
-        mockMvc = MockMvcBuilders.standaloneSetup(loanRequestController).build()
-
-        mapper = ObjectMapper().registerModule(KotlinModule.Builder().build())
-    }
+//    fun init() {
+//        generateKey = GenerateKey()
+//
+//        encryptComponent = EncryptComponent()
+//
+//        loanRequestServiceImpl = LoanRequestServiceImpl(
+//            generateKey, userInfoRepository, encryptComponent
+//        )
+//
+//        loanRequestController = LoanRequestController(loanRequestServiceImpl)
+//
+//        mockMvc = MockMvcBuilders.standaloneSetup(loanRequestController).build()
+//
+//        mapper = ObjectMapper().registerModule(KotlinModule.Builder().build())
+//    }
 
     @Test
     @DisplayName("유저 요청이 들어오면 정상 응답을 주어야 한다.")
