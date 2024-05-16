@@ -1,13 +1,13 @@
 package com.zerobase.api.loan.request
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.KotlinModule
+//import com.fasterxml.jackson.module.kotlin.KotlinModule
 import com.zerobase.api.loan.GenerateKey
 import com.zerobase.api.loan.encrypt.EncryptComponent
 import com.zerobase.domain.domain.UserInfo
 import com.zerobase.domain.repository.UserInfoRepository
-import io.mockk.every
-import io.mockk.mockk
+//import io.mockk.every
+//import io.mockk.mockk
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
@@ -29,7 +29,7 @@ internal class LoanRequestControllerTest {
 
     private lateinit var encryptComponent: EncryptComponent
 
-    private val userInfoRepository: UserInfoRepository = mockk()
+//    private val userInfoRepository: UserInfoRepository = mockk()
 
     private lateinit var mapper: ObjectMapper
 
@@ -68,7 +68,7 @@ internal class LoanRequestControllerTest {
                 userRegistrationNumber = "000101-1234567"
             )
 
-        every { userInfoRepository.save(any()) } returns UserInfo("", "", "", 1)
+//        every { userInfoRepository.save(any()) } returns UserInfo("", "", "", 1)
 
         // when
         // then

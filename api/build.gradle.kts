@@ -18,12 +18,12 @@ dependencies {
     runtimeOnly("com.h2database:h2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.+")
 
-    // AOP
-    implementation("org.springframework.boot:spring-boot-starter-aop")
-
-    // Logging
-    implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
-
-    // Redis
+//    // AOP
+//    implementation("org.springframework.boot:spring-boot-starter-aop")
+//
+//    // Logging
+//    implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
+//
+//    // Redis
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
 }
