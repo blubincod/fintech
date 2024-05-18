@@ -19,10 +19,10 @@ class ProductInfo(
     @Column(name = "prod_nm")
     val productName: String,
 
-    @Column(name = "pord_min_intr")
+    @Column(name = "prod_min_intr")
     val productMinimumInterest: Double,
 
-    @Column(name = "pord_max_intr")
+    @Column(name = "prod_max_intr")
     val productMaximumInterest: Double
 ) {
     @Id

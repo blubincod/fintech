@@ -3,8 +3,8 @@ spring:
     include:
       - domain
   mvc:
-    pathmatch:
+    path match:
       matching-strategy: ant_path_matcher
 
-#server:
-#  port: 80
+server:
+  port: 80

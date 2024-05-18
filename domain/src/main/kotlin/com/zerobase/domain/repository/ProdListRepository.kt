@@ -6,5 +6,5 @@ import com.zerobase.domain.domain.UserInfo
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface ProdListRepository : JpaRepository<ProductList, Long> {
-    fun findByProductCode(productCode: String): ProductList?
+//    fun findByOrgCode(organizationCode: String): ProductList?
 }
