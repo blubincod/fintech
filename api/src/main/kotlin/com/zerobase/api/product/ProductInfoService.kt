@@ -7,6 +7,8 @@ interface ProductInfoService {
             productInfoInputDto: ProductInfoDto.ProductInfoInputDto
     ): ProductInfoDto.ProductInfoResponseDto
 
+    fun getProductInfo(organizationCode : String): ProductInfoDto.ProductInfoResponseDto?
+
     fun saveProductInfo(
             productInfoInputDto: ProductInfoDto.ProductInfoInputDto
     ): ProductInfo
